@@ -74,22 +74,15 @@ class _QuizPageState extends State<QuizPage> {
               onPressed: () {
                 //The user picked true.
 
-                bool correctAnswer = answers[questionNumber];
-
-                  if(correctAnswer == true){
-
+               bool correctAnswer = answers[questionNumber];
+                if(correctAnswer == false){
                   print('user is right');
                 }else{
                   print('user wrong');
-
-            
+                }
                 setState(() {
                   questionNumber++;
                 });
-                }
-
-
-              
                 print(questionNumber);
               },
               
@@ -141,4 +134,4 @@ question1: 'You can lead a cow down stairs but not up stairs.', false,
 question2: 'Approximately one quarter of human bones are in the feet.', true,
 question3: 'A slug\'s blood is green.', true,
 */
-//hello
+//hello from sahana
