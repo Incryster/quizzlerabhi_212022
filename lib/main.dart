@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:quizzlerabhi_212022/question.dart';
 
@@ -33,7 +34,7 @@ class _QuizPageState extends State<QuizPage> {
     'A slug\'s blood is green.?',
   ];
 
-  List <bool> answers = [false,true,true];
+  List<bool> answers = [false, true, true];
 
   Question q1 = Question(q:'You can lead a cow down stairs but not up stairs.?', a:true);
 
@@ -77,21 +78,23 @@ class _QuizPageState extends State<QuizPage> {
               onPressed: () {
                 //The user picked true.
 
-               bool correctAnswer = answers[questionNumber];
-                if(correctAnswer == false){
+
+                bool correctAnswer = answers[questionNumber];
+
+                if (correctAnswer == true) {
+
                   print('user is right');
-                }else{
+                } else {
                   print('user wrong');
                 }
 
                 setState(() {
                   questionNumber++;
                 });
-            
+
 
                 print(questionNumber);
               },
-              
             ),
           ),
         ),
@@ -111,10 +114,10 @@ class _QuizPageState extends State<QuizPage> {
               onPressed: () {
                 //The user picked false.
 
-                 bool correctAnswer = answers[questionNumber];
-                if(correctAnswer == false){
+                bool correctAnswer = answers[questionNumber];
+                if (correctAnswer == false) {
                   print('user is right');
-                }else{
+                } else {
                   print('user wrong');
                 }
                 setState(() {
