@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart'; 
+
+import 'package:flutter/material.dart';
+import 'package:quizzlerabhi_212022/question.dart';
 
 void main() => runApp(Quizzler());
 
@@ -33,6 +35,8 @@ class _QuizPageState extends State<QuizPage> {
   ];
 
   List<bool> answers = [false, true, true];
+
+  Question q1 = Question(q:'You can lead a cow down stairs but not up stairs.?', a:true);
 
   int questionNumber = 0;
 
@@ -74,9 +78,11 @@ class _QuizPageState extends State<QuizPage> {
               onPressed: () {
                 //The user picked true.
 
+
                 bool correctAnswer = answers[questionNumber];
 
                 if (correctAnswer == true) {
+
                   print('user is right');
                 } else {
                   print('user wrong');
@@ -85,6 +91,7 @@ class _QuizPageState extends State<QuizPage> {
                 setState(() {
                   questionNumber++;
                 });
+
 
                 print(questionNumber);
               },
@@ -136,4 +143,9 @@ question1: 'You can lead a cow down stairs but not up stairs.', false,
 question2: 'Approximately one quarter of human bones are in the feet.', true,
 question3: 'A slug\'s blood is green.', true,
 */
-//hello
+
+//hrllo
+//from aashlin
+
+// i add this line to the file 
+
